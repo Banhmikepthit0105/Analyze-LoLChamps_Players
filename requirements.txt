@@ -1,0 +1,24 @@
+Ngôn ngữ phải là tiếng việt
+
+
+-----------------------------------------------------------
+Mức 1: vibe coding
+Kết quả trả về -> Đánh giá
+
+Thực hiện đánh giá Trong quá trình xây dựng và thiết kế
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------
+Mức 2: công cụ hỗ trợ AI đã được tích hợp sẵn trong Tableau hoặc powerBI -> tuy nhiên khá hạn chế, do chỉ hỗ trợ tiếng anh nên giao tiếp ngôn ngữ tiếng việt khá khó khăn
+
+Viết giao diện chatbot để thực hiện giao tiếp. Khuyến khích các chatbot API
+Gởi yêu cầu và trả về kết quả
+Đánh giá kết quả trả về đúng/sai -> Nếu sai thì cần làm gì để đánh giá
+
+
+Ví dụ:
+
+Vẽ biểu dồ phân tích mối quan hệ hồi quy giữa X, Y -> Trả ra bảng kết quả
+-----------------------------------------------------------
