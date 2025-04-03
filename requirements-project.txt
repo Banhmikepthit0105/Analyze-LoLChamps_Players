@@ -29,4 +29,10 @@ Vẽ biểu dồ phân tích mối quan hệ hồi quy giữa X, Y -> Trả ra b
 Sử dụng PandasAI để thực hiện phân tích dữ liệu, lấy API key tại đây
 
 https://app.pandabi.ai/sign-in
+
 -----------------------------------------------------------
+
+-----------------------------------------------------------
+DOCUMENT ĐỂ ĐỌC TÀI LIỆU API
+
+https://docs.getpanda.ai/v3/introduction
