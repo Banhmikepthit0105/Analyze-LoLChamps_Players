@@ -8,11 +8,9 @@ from pandasai.llm.base import LLM
 import requests
 import json
 
-# Load biến môi trường từ file .env (đường dẫn tương đối từ thư mục src)
 dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
 load_dotenv(dotenv_path=dotenv_path)
 
-# Lấy API key từ biến môi trường
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 class StreamlitResponse(ResponseParser):
@@ -56,12 +54,10 @@ class DeepSeekLLM(LLM):
     def type(self) -> str:
         return "deepseek-llm"
 
-# Streamlit app
 st.set_page_config(layout='wide')
 st.title("ChatBot : Prompt Based Data Analysis and Visualization")
 st.markdown('---')
 
-# File uploader
 upload_csv_file = st.file_uploader("Upload Your CSV file", type=["csv"])
 
 data = None
