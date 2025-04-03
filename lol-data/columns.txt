@@ -1,0 +1,29 @@
+Player
+G - Games (số trận đã chơi)
+W - Win
+L - Loss
+WR - Win rate (Win / Games)
+K - Kills (avg số lần giết ng chơi khác)
+D - Deaths (avg số lần chết)
+A - Assists (avg số lần hỗ trợ giết ng chơi khác)
+KDA - Tỷ lệ (K + A) / D
+CS - Creep score => avg số lính (npc) giết được
+CS/M - Creep score per minute => tỷ lệ CS mỗi phút
+G - Gold => avg số vàng
+G/M - Gold per minute => tỷ lệ G mỗi phút
+DMG - Damage => avg số sát thương gây ra
+DMG/M - Damage per minute => tỷ lệ DMG mỗi phút
+KPAR - Kill Participation => tỷ lệ góp phần số giết và hỗ trợ của đội (K + A) / (K của đội)
+KS - Kill share =>  tỷ lệ góp phần số giết của đội K / (K của đội)
+GS - Gold share => tỷ lệ góp phần số vàng của đội G / (G của đội)
+CP - Champions played => số tướng đã chơi
+Champs - Top 3 tướng chọn thường xuyên
+
+
+Champion
+G - Games => số trận trong mùa mà tướng đã xuất hiện
+PB - Pick ban % -> tỷ lệ xuất hiện của tướng trong nguyên mùa (G / tổng số trận của màu)
+B - Ban => Số trận tướng đó bị cấm
+GP - Games played => Số trận tướng đó được chơi
+By - Played by number of players => Số người chơi đã chơi con tướng
+As - Played as [role] => vai trò mà tướng này thường được chọn
