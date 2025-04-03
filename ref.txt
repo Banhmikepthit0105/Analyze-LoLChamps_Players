@@ -1,0 +1,3 @@
+https://github.com/thom22/Text-to-SQL-App-Using-Google-Gemini?tab=readme-ov-file
+
+https://github.com/thom22/Prompt-Based-Data-Analysis-and-Visualization-Chatbot-for-CSV-Data/blob/main/chatbot_app.py
