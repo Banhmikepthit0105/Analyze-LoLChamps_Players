@@ -67,7 +67,10 @@ st.markdown('---')
 st.write('### Enter Your Analysis or Visualization Request')
 query = st.text_area("Enter your prompt")
 
-llm = DeepSeekLLM(api_key='your_deepseek_api_key_here')  
+
+
+
+llm = DeepSeekLLM(api_key='')  
 
 if st.button("Submit"):
     if query:
