@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 from pandasai import SmartDataframe
@@ -5,6 +7,13 @@ from pandasai.responses.response_parser import ResponseParser
 from pandasai.llm.base import LLM
 import requests
 import json
+
+# Load biến môi trường từ file .env (đường dẫn tương đối từ thư mục src)
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path=dotenv_path)
+
+# Lấy API key từ biến môi trường
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 class StreamlitResponse(ResponseParser):
     def __init__(self, context) -> None:
@@ -22,7 +31,6 @@ class StreamlitResponse(ResponseParser):
         st.write(result["value"])
         return
 
-# Custom DeepSeek LLM class
 class DeepSeekLLM(LLM):
     def __init__(self, api_key: str, model: str = "deepseek-chat"):
         super().__init__()
@@ -48,45 +56,40 @@ class DeepSeekLLM(LLM):
     def type(self) -> str:
         return "deepseek-llm"
 
-# Streamlit UI configuration
+# Streamlit app
 st.set_page_config(layout='wide')
 st.title("ChatBot : Prompt Based Data Analysis and Visualization")
 st.markdown('---')
 
 # File uploader
-upload_csv_file = st.file_uploader("Upload Your CSV file for data analysis and visualization", type=["csv"])
+upload_csv_file = st.file_uploader("Upload Your CSV file", type=["csv"])
 
 data = None
 if upload_csv_file is not None:
     data = pd.read_csv(upload_csv_file)
     data.columns = data.columns.str.upper()
     st.table(data.head(5))
-    st.write('Data Uploaded Successfully!')
+    st.success('Data Uploaded Successfully!')
 
 st.markdown('---')
-st.write('### Enter Your Analysis or Visualization Request')
+st.write('### Enter Your Analysis Request')
 query = st.text_area("Enter your prompt")
 
-
-
-
-llm = DeepSeekLLM(api_key='')  
-
 if st.button("Submit"):
-    if query:
+    if not query:
+        st.warning("Please enter a prompt")
+    elif data is None:
+        st.error("Please upload a CSV file first!")
+    else:
         with st.spinner("Processing..."):
             st.write('### OUTPUT:')
             st.markdown('---')
-            if data is not None:
-                query_engine = SmartDataframe(
-                    data,
-                    config={
-                        'llm': llm,
-                        "response_parser": StreamlitResponse
-                    }
-                )
-                query_engine.chat(query)
-            else:
-                st.error("Please upload a CSV file first!")
-    else:
-        st.warning("Please enter a prompt")
+            llm = DeepSeekLLM(api_key=DEEPSEEK_API_KEY)
+            query_engine = SmartDataframe(
+                data,
+                config={
+                    'llm': llm,
+                    "response_parser": StreamlitResponse
+                }
+            )
+            query_engine.chat(query)
