@@ -1,23 +1,16 @@
-import os
-from dotenv import load_dotenv
+
 import pandas as pd
 import streamlit as st
 from pandasai import SmartDataframe
 from pandasai.responses.response_parser import ResponseParser
-from pandasai.llm.base import LLM
-import requests
-import json
-
-dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
-load_dotenv(dotenv_path=dotenv_path)
-
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+from pandasai.llm import OpenAI
 
 class StreamlitResponse(ResponseParser):
-    def __init__(self, context) -> None:
+    def __init__(self, context)-> None :
+
         super().__init__(context)
 
-    def format_dataframe(self, result):
+    def format_dataframe(self, result):  
         st.dataframe(result["value"])
         return
 
@@ -29,63 +22,47 @@ class StreamlitResponse(ResponseParser):
         st.write(result["value"])
         return
 
-class DeepSeekLLM(LLM):
-    def __init__(self, api_key: str, model: str = "deepseek-chat"):
-        super().__init__()
-        self.api_key = api_key
-        self.model = model
-        self._api_url = "https://api.deepseek.com/v1/chat/completions"
-
-    def call(self, prompt: str, **kwargs) -> str:
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
-        data = {
-            "model": self.model,
-            "messages": [{"role": "user", "content": prompt}],
-            **kwargs
-        }
-        response = requests.post(self._api_url, headers=headers, json=data)
-        response.raise_for_status()
-        return response.json()["choices"][0]["message"]["content"]
-
-    @property
-    def type(self) -> str:
-        return "deepseek-llm"
-
+# make the app wider
 st.set_page_config(layout='wide')
-st.title("ChatBot : Prompt Based Data Analysis and Visualization")
-st.markdown('---')
 
-upload_csv_file = st.file_uploader("Upload Your CSV file", type=["csv"])
+# set the title
+st.title ("  ChatBot : Prompt Based Data Analysis and Visualization ")
+st.markdown('---') # to make line 
 
-data = None
+# file uploader using streamlit 
+upload_csv_file = st.file_uploader("Upload Your CSV file for data analysis and visualization", type = ["csv"])
+
+# if statement to make sure the data is uploaded
 if upload_csv_file is not None:
     data = pd.read_csv(upload_csv_file)
-    data.columns = data.columns.str.upper()
+    data.columns = data.columns.str.upper()   #convert the columns to uppercase 
     st.table(data.head(5))
-    st.success('Data Uploaded Successfully!')
+    st.write(' Data Uploaded Successfully!')
 
 st.markdown('---')
-st.write('### Enter Your Analysis Request')
-query = st.text_area("Enter your prompt")
 
-if st.button("Submit"):
-    if not query:
-        st.warning("Please enter a prompt")
-    elif data is None:
-        st.error("Please upload a CSV file first!")
-    else:
-        with st.spinner("Processing..."):
-            st.write('### OUTPUT:')
+st.write ( '### Enter Your Analysis or Visualization Request')
+query = st.text_area(" Enter your prompt")
+
+llm = OpenAI(api_token= 'open_ai_secret_api_key')  # api key starts with something sk-...
+
+
+if st.button ("Submit"):
+    if query:
+        with st.spinner("Loading wait.."):
+            st.write ( '### OUTPUT : ')
             st.markdown('---')
-            llm = DeepSeekLLM(api_key=DEEPSEEK_API_KEY)
-            query_engine = SmartDataframe(
-                data,
-                config={
-                    'llm': llm,
-                    "response_parser": StreamlitResponse
-                }
-            )
+            query_engine = SmartDataframe(data, config = {'llm':llm, "response_parser": StreamlitResponse})
+            # query_engine = SmartDataframe(data, config = {'llm':llm})
+
+            # answer = query_engine.chat(query)
             query_engine.chat(query)
+
+            
+            # st.write(answer)
+    else:
+        st.warning("Please enter a prompt") 
+
+
+
+
