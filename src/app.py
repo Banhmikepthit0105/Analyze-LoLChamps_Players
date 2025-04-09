@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 from pandasai import SmartDataframe
 from pandasai.responses.response_parser import ResponseParser
+from pandasai import Agent
 from pandasai.llm import OpenAI
 
 class StreamlitResponse(ResponseParser):
