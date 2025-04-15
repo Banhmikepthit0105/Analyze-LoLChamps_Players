@@ -10,3 +10,5 @@ Run the streamlit app in your terminal
 ```python
 streamlit run app.py
 ```
+
+Dashboard UI demo (html): [LOL Dashboard](https://huggingface.co/spaces/thuyquynh/lol)
