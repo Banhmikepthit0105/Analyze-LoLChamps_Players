@@ -1,69 +1,43 @@
-
-import pandas as pd
 import streamlit as st
-from pandasai import SmartDataframe
-from pandasai.responses.response_parser import ResponseParser
-from pandasai import Agent
-from pandasai.llm import OpenAI
+import pandas as pd
+from plot_generator import create_plot
 
-class StreamlitResponse(ResponseParser):
-    def __init__(self, context)-> None :
+# Cấu hình trang và nền trắng cho dashboard
+st.set_page_config(page_title="Dashboard League of Legends", layout="wide")
+st.markdown(
+    """
+    <style>
+    /* Đặt nền trang chính thành trắng */
+    .reportview-container {
+        background-color: white;
+    }
+    /* Đặt nền sidebar thành trắng */
+    .sidebar .sidebar-content {
+        background-color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-        super().__init__(context)
+st.title("Dashboard Trực Quan Hóa Dữ Liệu League of Legends")
+st.write("Nhập yêu cầu của bạn để tạo biểu đồ trực quan dựa trên dữ liệu của giải đấu.")
 
-    def format_dataframe(self, result):  
-        st.dataframe(result["value"])
-        return
+file_path = "../data/preprocessed_data/processed_champion_stats.csv"
+try:
+    df = pd.read_csv(file_path)
+except FileNotFoundError:
+    st.error(f"Không tìm thấy file dữ liệu tại {file_path}")
+    st.stop()  
 
-    def format_plot(self, result):
-        st.image(result["value"])
-        return
+user_input = st.text_input("Yêu cầu của người dùng:", value="")
 
-    def format_other(self, result):
-        st.write(result["value"])
-        return
-
-# make the app wider
-st.set_page_config(layout='wide')
-
-# set the title
-st.title ("  ChatBot : Prompt Based Data Analysis and Visualization ")
-st.markdown('---') # to make line 
-
-# file uploader using streamlit 
-upload_csv_file = st.file_uploader("Upload Your CSV file for data analysis and visualization", type = ["csv"])
-
-# if statement to make sure the data is uploaded
-if upload_csv_file is not None:
-    data = pd.read_csv(upload_csv_file)
-    data.columns = data.columns.str.upper()   #convert the columns to uppercase 
-    st.table(data.head(5))
-    st.write(' Data Uploaded Successfully!')
-
-st.markdown('---')
-
-st.write ( '### Enter Your Analysis or Visualization Request')
-query = st.text_area(" Enter your prompt")
-
-llm = OpenAI(api_token= 'open_ai_secret_api_key')  # api key starts with something sk-...
-
-
-if st.button ("Submit"):
-    if query:
-        with st.spinner("Loading wait.."):
-            st.write ( '### OUTPUT : ')
-            st.markdown('---')
-            query_engine = SmartDataframe(data, config = {'llm':llm, "response_parser": StreamlitResponse})
-            # query_engine = SmartDataframe(data, config = {'llm':llm})
-
-            # answer = query_engine.chat(query)
-            query_engine.chat(query)
-
-            
-            # st.write(answer)
-    else:
-        st.warning("Please enter a prompt") 
-
-
-
-
+if st.button("Tạo Biểu Đồ"):
+    with st.spinner("Đang tạo biểu đồ..."):
+        try:
+            # Truyền DataFrame cùng yêu cầu vào hàm tạo biểu đồ
+            fig = create_plot(user_input, df)
+            st.success("Biểu đồ đã được tạo thành công!")
+            st.plotly_chart(fig, use_container_width=True)
+        except Exception as e:
+            st.error(f"Lỗi: {e}")
