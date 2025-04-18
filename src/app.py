@@ -1,43 +1,81 @@
-import streamlit as st
+from flask import Flask, render_template, request, jsonify
+import os
 import pandas as pd
+import plotly
+import json
+from dotenv import load_dotenv
 from plot_generator import create_plot
 
-# Cấu hình trang và nền trắng cho dashboard
-st.set_page_config(page_title="Dashboard League of Legends", layout="wide")
-st.markdown(
-    """
-    <style>
-    /* Đặt nền trang chính thành trắng */
-    .reportview-container {
-        background-color: white;
-    }
-    /* Đặt nền sidebar thành trắng */
-    .sidebar .sidebar-content {
-        background-color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+app = Flask(__name__)
 
-st.title("Dashboard Trực Quan Hóa Dữ Liệu League of Legends")
-st.write("Nhập yêu cầu của bạn để tạo biểu đồ trực quan dựa trên dữ liệu của giải đấu.")
+load_dotenv()
 
-file_path = "../data/preprocessed_data/processed_champion_stats.csv"
+# Đường dẫn đến các file CSV
+CHAMPION_DATA_PATH = "../data/preprocessed_data/processed_champion_stats.csv"
+PLAYER_DATA_PATH = "../data/preprocessed_data/processed_player_stats.csv"
+
+# Đọc DataFrame
 try:
-    df = pd.read_csv(file_path)
+    champion_df = pd.read_csv(CHAMPION_DATA_PATH)
 except FileNotFoundError:
-    st.error(f"Không tìm thấy file dữ liệu tại {file_path}")
-    st.stop()  
+    champion_df = None
+    print(f"Error: File {CHAMPION_DATA_PATH} not found.")
 
-user_input = st.text_input("Yêu cầu của người dùng:", value="")
+try:
+    player_df = pd.read_csv(PLAYER_DATA_PATH)
+except FileNotFoundError:
+    player_df = None
+    print(f"Error: File {PLAYER_DATA_PATH} not found.")
 
-if st.button("Tạo Biểu Đồ"):
-    with st.spinner("Đang tạo biểu đồ..."):
-        try:
-            # Truyền DataFrame cùng yêu cầu vào hàm tạo biểu đồ
-            fig = create_plot(user_input, df)
-            st.success("Biểu đồ đã được tạo thành công!")
-            st.plotly_chart(fig, use_container_width=True)
-        except Exception as e:
-            st.error(f"Lỗi: {e}")
+# Route để render trang Power BI
+@app.route('/')
+def powerbi():
+    return render_template('dashboard-ai.html')
+
+# Route để render trang Plotly
+@app.route('/plot')
+def plot():
+    return render_template('render-powerbi.html')
+
+# Route để tạo biểu đồ từ yêu cầu người dùng
+@app.route('/api/plot', methods=['POST'])
+def generate_plot():
+    # Kiểm tra xem DataFrame có được tải thành công không
+    if champion_df is None and player_df is None:
+        return jsonify({'error': 'No DataFrames loaded. Please provide valid data files.'}), 500
+
+    try:
+        data = request.get_json()
+        user_input = data.get('user_input')
+        provider = data.get('provider', 'gemini')  
+        deepseek_api_key = data.get('DEEPSEEK_API_KEY', None)
+        dataset = data.get('dataset', 'champion')  
+
+        if not user_input:
+            return jsonify({'error': 'Missing user_input parameter'}), 400
+
+        # Chọn DataFrame dựa trên tham số dataset
+        if dataset.lower() == 'champion':
+            if champion_df is None:
+                return jsonify({'error': 'Champion DataFrame not loaded.'}), 500
+            df = champion_df
+        elif dataset.lower() == 'player':
+            if player_df is None:
+                return jsonify({'error': 'Player DataFrame not loaded.'}), 500
+            df = player_df
+        else:
+            return jsonify({'error': 'Invalid dataset parameter. Use "champion" or "player".'}), 400
+
+        # Gọi hàm create_plot để tạo biểu đồ
+        fig = create_plot(user_input, df, provider, deepseek_api_key)
+
+        # Chuyển đổi biểu đồ thành JSON để hiển thị trên frontend
+        fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+
+        return jsonify({'plot': fig_json})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
