@@ -103,12 +103,12 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2018,Summer_Season,Cherry Esports,Hari,33,10,23,30.3,3.06,4.0,4.18,1.81,243.24,8.64,11.2,398.0,52.6,22.2,22.3,12,"Jax, Gnar, Jayce",Top Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,Zeroday,20,8,12,40.0,3.85,3.95,6.95,2.73,272.1,8.89,12.6,412.0,69.0,24.6,22.3,7,"Ryze, Orianna, LeBlanc",Mid Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,Zin,19,6,13,31.6,3.84,1.58,4.11,5.03,273.37,9.06,12.4,410.0,57.9,28.0,22.9,9,"Varus, Kai'Sa, Ezreal",Bot Laner,131,458.0,9.87,6.1,70.9
-2018,Summer_Season,Cherry Esports,CIearG,19,5,14,26.3,3.32,2.95,5.16,2.88,227.42,8.48,10.7,401.0,63.1,24.7,23.0,8,"Varus, Ezreal, Xayah",,131,458.0,9.87,6.1,70.9
+2018,Summer_Season,Cherry Esports,CIearG,19,5,14,26.3,3.32,2.95,5.16,2.88,227.42,8.48,10.7,401.0,63.1,24.7,23.0,8,"Varus, Ezreal, Xayah",Bot Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,Bara,18,7,11,38.9,2.94,3.61,6.78,2.69,155.22,5.18,10.5,350.0,63.6,19.3,19.0,5,"Trundle, Graves, Kindred",Jungler,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,HanKay,18,7,11,38.9,0.94,3.67,8.28,2.52,35.83,1.21,7.3,246.0,61.5,6.3,13.3,6,"Shen, Morgana, Braum",Mid Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,Heaven,15,3,12,20.0,1.8,4.07,5.27,1.74,102.0,3.92,7.7,297.0,59.2,15.1,17.6,9,"Trundle, Sejuani, Camille",Jungler,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cherry Esports,Ynot,15,3,12,20.0,1.53,4.27,6.93,1.98,48.27,1.86,6.7,259.0,70.9,12.8,15.4,9,"Alistar, Shen, Rakan",Support,131,458.0,9.87,6.1,70.9
-2018,Summer_Season,Cherry Esports,lkaros,14,3,11,21.4,2.64,3.43,4.0,1.94,206.71,7.94,9.5,366.0,54.1,21.5,21.6,10,"Taliyah, Zoe, LeBlanc",,131,458.0,9.87,6.1,70.9
+2018,Summer_Season,Cherry Esports,lkaros,14,3,11,21.4,2.64,3.43,4.0,1.94,206.71,7.94,9.5,366.0,54.1,21.5,21.6,10,"Taliyah, Zoe, LeBlanc",Mid Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cube Adonis,EasyLove,34,21,13,61.8,4.12,2.65,5.59,3.67,300.65,9.87,10.16,346.6,55.2,23.4,19.226,10,"Vladimir, Varus, Kai'Sa",Bot Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cube Adonis,Pake,34,21,13,61.8,4.21,2.44,5.53,3.99,275.03,9.02,10.16,346.6,55.4,23.9,19.226,8,"Irelia, Orianna, Ryze",Mid Laner,131,458.0,9.87,6.1,70.9
 2018,Summer_Season,Cube Adonis,Sorn,34,21,13,61.8,4.18,3.5,7.44,3.32,161.76,5.31,10.16,346.6,66.1,23.7,19.226,8,"Graves, Camille, Trundle",Jungler,131,458.0,9.87,6.1,70.9
@@ -510,9 +510,9 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2020,Summer_Promotion,OverPower Esports,Zin,8,6,2,75.0,0.88,2.5,12.13,5.2,25.25,0.82,11.210946275743499,362.38825490670575,68.9,4.6,19.82388335571383,4,"Thresh, Nautilus, Sett",Support,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,OverPower Esports,KemKen,6,5,1,83.3,3.83,2.33,7.5,4.86,244.0,8.06,11.210946275743499,362.38825490670575,63.0,21.3,19.82388335571383,4,"Renekton, Wukong, Ornn",Top Laner,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,OverPower Esports,Simon,2,1,1,50.0,5.0,5.0,7.0,2.4,189.0,5.73,11.210946275743499,362.38825490670575,55.8,23.3,19.82388335571383,2,"Wukong, Maokai",Top Laner,19,362.38825490670575,9.91,7.54,76.2
-2020,Summer_Promotion,Percent Esports,lisa,12,7,5,58.3,1.0,2.92,9.58,3.63,35.67,1.13,11.210946275743499,362.38825490670575,65.8,6.2,19.82388335571383,6,"Braum, Thresh, Nautilus",,19,362.38825490670575,9.91,7.54,76.2
+2020,Summer_Promotion,Percent Esports,lisa,12,7,5,58.3,1.0,2.92,9.58,3.63,35.67,1.13,11.210946275743499,362.38825490670575,65.8,6.2,19.82388335571383,6,"Braum, Thresh, Nautilus",Support,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,Percent Esports,Glory,12,7,5,58.3,4.83,2.17,6.42,5.19,268.75,8.48,11.210946275743499,362.38825490670575,69.9,30.1,19.82388335571383,10,"LeBlanc, Corki, Rumble",Mid Laner,19,362.38825490670575,9.91,7.54,76.2
-2020,Summer_Promotion,Percent Esports,shine,12,7,5,58.3,4.67,2.5,5.58,4.1,307.25,9.69,11.210946275743499,362.38825490670575,63.7,29.0,19.82388335571383,3,"Aphelios, Varus, Miss Fortune",,19,362.38825490670575,9.91,7.54,76.2
+2020,Summer_Promotion,Percent Esports,shine,12,7,5,58.3,4.67,2.5,5.58,4.1,307.25,9.69,11.210946275743499,362.38825490670575,63.7,29.0,19.82388335571383,3,"Aphelios, Varus, Miss Fortune",Bot Laner,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,Percent Esports,Jahseh,10,5,5,50.0,3.2,2.4,6.1,3.88,162.3,5.1,11.210946275743499,362.38825490670575,66.0,22.7,19.82388335571383,5,"Rek'Sai, Elise, Lee Sin",Jungler,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,Percent Esports,Tado,7,4,3,57.1,1.71,3.43,5.86,2.21,217.14,7.0,11.210946275743499,362.38825490670575,46.1,10.4,19.82388335571383,4,"Aatrox, Renekton, Kennen",Top Laner,19,362.38825490670575,9.91,7.54,76.2
 2020,Summer_Promotion,Percent Esports,yT,5,3,2,60.0,2.6,3.0,5.6,2.73,261.2,8.0,11.210946275743499,362.38825490670575,52.6,16.7,19.82388335571383,5,"Jayce, Camille, Wukong",Top Laner,19,362.38825490670575,9.91,7.54,76.2
@@ -656,7 +656,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2021,Spring_Season,GAM Esports,Kiaya,32,26,6,81.3,3.16,1.69,7.38,6.24,218.94,7.94,11.1,404.0,58.1,17.4,20.8,9,"Gnar, Malphite, Gragas",Top Laner,143,479.0,9.62,6.42,90.0
 2021,Spring_Season,GAM Esports,Levi,32,26,6,81.3,4.75,2.06,8.44,6.39,193.97,7.03,11.3,411.0,72.8,26.2,21.2,11,"Udyr, Lillia, Hecarim",Jungler,143,479.0,9.62,6.42,90.0
 2021,Spring_Season,GAM Esports,Sty1e,26,21,5,80.8,5.62,2.42,6.08,4.83,237.12,8.77,12.3,455.0,65.5,31.5,23.4,6,"Kai'Sa, Tristana, Xayah",Bot Laner,143,479.0,9.62,6.42,90.0
-2021,Spring_Season,GAM Esports,Easylove,6,5,1,83.3,6.0,2.17,4.83,5.0,279.33,9.35,13.5,453.0,56.0,31.0,23.3,2,"Xayah, Kai'Sa",,143,479.0,9.62,6.42,90.0
+2021,Spring_Season,GAM Esports,Easylove,6,5,1,83.3,6.0,2.17,4.83,5.0,279.33,9.35,13.5,453.0,56.0,31.0,23.3,2,"Xayah, Kai'Sa",Bot Laner,143,479.0,9.62,6.42,90.0
 2021,Spring_Season,GMedia Luxury,Blazes,34,10,24,29.4,2.79,3.74,5.65,2.26,262.85,8.64,11.9,392.0,63.5,21.0,21.9,14,"Viktor, Orianna, Lucian",Mid Laner,143,479.0,9.62,6.42,90.0
 2021,Spring_Season,GMedia Luxury,Kemken,34,10,24,29.4,2.21,3.91,4.79,1.79,248.79,8.18,11.7,385.0,52.7,16.6,21.5,10,"Gnar, Renekton, Sion",Top Laner,143,479.0,9.62,6.42,90.0
 2021,Spring_Season,GMedia Luxury,Shine,34,10,24,29.4,3.79,3.62,4.62,2.33,258.21,8.49,12.5,411.0,63.3,28.5,23.0,10,"Kai'Sa, Aphelios, Samira",Bot Laner,143,479.0,9.62,6.42,90.0
@@ -733,11 +733,11 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2021,Summer_Promotion,Genius Esports,nPER,8,2,6,25.0,2.38,4.0,5.0,1.84,223.25,7.68,10.8,371.0,59.0,19.0,22.0,7,"Lee Sin, Akali, Yone",Top Laner,17,512.0,9.66,7.47,72.2
 2021,Summer_Promotion,Genius Esports,Sevenk,8,2,6,25.0,3.38,4.5,5.13,1.89,178.75,6.15,10.1,348.0,68.0,27.0,20.6,5,"Rumble, Kindred, Lillia",Jungler,17,512.0,9.66,7.47,72.2
 2021,Summer_Promotion,Genius Esports,Vitt,6,2,4,33.3,5.33,3.67,4.5,2.68,291.5,9.66,13.6,451.0,72.0,39.0,26.1,4,"Xayah, Kai'Sa, Kalista",Bot Laner,17,512.0,9.66,7.47,72.2
-2021,Summer_Promotion,Genius Esports,Hinnn,2,0,2,0.0,2.5,4.0,2.5,1.25,210.0,8.17,9.5,369.0,55.6,27.8,23.9,1,Kai'Sa,,17,512.0,9.66,7.47,72.2
-2021,Summer_Promotion,Luxury Esports,Bisboo,6,6,0,100.0,1.33,2.5,14.67,6.4,40.0,1.43,7.8,278.0,58.5,4.9,13.2,3,"Leona, Nautilus, Rell",,17,512.0,9.66,7.47,72.2
-2021,Summer_Promotion,Luxury Esports,Blazess,6,6,0,100.0,6.0,2.5,12.67,7.47,228.5,8.18,12.5,448.0,68.3,22.0,21.2,5,"Zoe, Orianna, Jayce",,17,512.0,9.66,7.47,72.2
-2021,Summer_Promotion,Luxury Esports,Coateddd,6,6,0,100.0,5.17,2.33,7.83,5.57,219.0,7.84,12.8,457.0,47.6,18.9,21.6,4,"Aatrox, Jayce, Irelia",,17,512.0,9.66,7.47,72.2
-2021,Summer_Promotion,Luxury Esports,Killerqueenn,6,6,0,100.0,6.67,4.83,11.17,3.69,169.67,6.07,11.6,416.0,65.2,24.4,19.7,3,"Rumble, Kindred, Nidalee",,17,512.0,9.66,7.47,72.2
+2021,Summer_Promotion,Genius Esports,Hinnn,2,0,2,0.0,2.5,4.0,2.5,1.25,210.0,8.17,9.5,369.0,55.6,27.8,23.9,1,Kai'Sa,Support,17,512.0,9.66,7.47,72.2
+2021,Summer_Promotion,Luxury Esports,Bisboo,6,6,0,100.0,1.33,2.5,14.67,6.4,40.0,1.43,7.8,278.0,58.5,4.9,13.2,3,"Leona, Nautilus, Rell",Support,17,512.0,9.66,7.47,72.2
+2021,Summer_Promotion,Luxury Esports,Blazess,6,6,0,100.0,6.0,2.5,12.67,7.47,228.5,8.18,12.5,448.0,68.3,22.0,21.2,5,"Zoe, Orianna, Jayce",Mid Laner,17,512.0,9.66,7.47,72.2
+2021,Summer_Promotion,Luxury Esports,Coateddd,6,6,0,100.0,5.17,2.33,7.83,5.57,219.0,7.84,12.8,457.0,47.6,18.9,21.6,4,"Aatrox, Jayce, Irelia",Top Laner,17,512.0,9.66,7.47,72.2
+2021,Summer_Promotion,Luxury Esports,Killerqueenn,6,6,0,100.0,6.67,4.83,11.17,3.69,169.67,6.07,11.6,416.0,65.2,24.4,19.7,3,"Rumble, Kindred, Nidalee",Jungler,17,512.0,9.66,7.47,72.2
 2021,Summer_Promotion,Luxury Esports,Shinee,6,6,0,100.0,8.17,2.33,9.0,7.36,252.17,9.02,14.3,512.0,62.8,29.9,24.3,4,"Kai'Sa, Tristana, Varus",Bot Laner,17,512.0,9.66,7.47,72.2
 2021,Winter_Season,Burst The Sky Esports,Aomine,34,18,16,52.9,4.94,1.76,5.26,5.78,280.76,9.23,13.7,450.0,63.8,30.9,24.2,9,"Jhin, Kai'Sa, Lucian",Bot Laner,131,516.0,10.03,6.55,79.5
 2021,Winter_Season,Burst The Sky Esports,Draktharr,34,18,16,52.9,3.71,2.91,7.41,3.82,187.29,6.16,11.3,371.0,69.5,23.2,19.9,7,"Lee Sin, Xin Zhao, Graves",Jungler,131,516.0,10.03,6.55,79.5
@@ -901,13 +901,13 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2022,Spring_Playoffs,Team Secret,XuHao,8,5,3,62.5,1.13,3.63,9.25,2.86,27.75,0.91,7.6,248.0,66.4,7.2,13.3,6,"Nautilus, Karma, Renata Glasc",Support,12,508.0,10.04,6.09,83.3
 2022,Summer_Promotion,AS Esports,EasyLove,8,6,2,75.0,5.13,2.38,5.5,4.47,249.13,8.69,13.1,456.0,60.3,29.1,23.7,4,"Tristana, Xayah, Swain",Bot Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,AS Esports,Hyo,8,6,2,75.0,3.25,2.75,6.25,3.45,132.38,4.62,9.7,338.0,53.9,18.4,17.6,5,"Viego, Volibear, Gwen",Jungler,20,468.0,9.9,7.8,76.5
-2022,Summer_Promotion,AS Esports,playcool,8,6,2,75.0,4.38,1.25,5.38,7.8,268.5,9.36,12.7,444.0,55.3,24.8,23.1,5,"Ahri, Syndra, LeBlanc",,20,468.0,9.9,7.8,76.5
+2022,Summer_Promotion,AS Esports,playcool,8,6,2,75.0,4.38,1.25,5.38,7.8,268.5,9.36,12.7,444.0,55.3,24.8,23.1,5,"Ahri, Syndra, LeBlanc",Mid Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,AS Esports,LLT,8,6,2,75.0,3.25,3.63,5.5,2.41,238.25,8.31,12.1,423.0,49.6,18.4,21.9,7,"Gwen, Tristana, Gnar",Top Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,AS Esports,Zin,8,6,2,75.0,1.63,1.75,10.25,6.79,36.38,1.27,7.6,264.0,67.4,9.2,13.7,3,"Leona, Alistar, Nautilus",Support,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Burst The Sky Esports,Aomine,12,5,7,41.7,4.5,2.75,6.58,4.03,282.08,9.51,13.9,468.0,59.4,24.1,24.5,6,"Ezreal, Tristana, Xayah",Bot Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Burst The Sky Esports,Draktharr,12,5,7,41.7,6.33,2.67,5.92,4.59,196.58,6.63,12.3,413.0,65.6,33.9,21.6,6,"Graves, Lee Sin, Viego",Jungler,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Burst The Sky Esports,Elio,12,5,7,41.7,1.25,3.75,11.33,3.36,40.33,1.36,7.8,263.0,67.4,6.7,13.7,6,"Leona, Nami, Rakan",Support,20,468.0,9.9,7.8,76.5
-2022,Summer_Promotion,Burst The Sky Esports,Gloryy,12,5,7,41.7,4.42,3.25,6.83,3.46,248.83,8.39,12.2,411.0,60.3,23.7,21.5,9,"Ryze, LeBlanc, Orianna",,20,468.0,9.9,7.8,76.5
+2022,Summer_Promotion,Burst The Sky Esports,Gloryy,12,5,7,41.7,4.42,3.25,6.83,3.46,248.83,8.39,12.2,411.0,60.3,23.7,21.5,9,"Ryze, LeBlanc, Orianna",Mid Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Burst The Sky Esports,Ryuk,12,5,7,41.7,2.17,3.83,6.0,2.13,213.58,7.2,10.6,358.0,43.8,11.6,18.7,5,"Gragas, Renekton, Gwen",Top Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Genius Esports,Biob,12,7,5,58.3,0.83,3.58,9.58,2.91,37.08,1.24,7.2,243.0,68.3,5.5,13.2,6,"Leona, Nautilus, Pantheon",Support,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Genius Esports,Henli,12,7,5,58.3,3.17,2.25,7.0,4.52,222.33,7.46,11.2,376.0,66.7,20.8,20.4,4,"Ryze, Galio, Veigar",Mid Laner,20,468.0,9.9,7.8,76.5
@@ -919,7 +919,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2022,Summer_Promotion,Team Flash,Yoshino,8,2,6,25.0,3.0,5.25,4.13,1.36,207.5,7.29,10.5,367.0,53.8,22.6,20.9,5,"Camille, Gragas, Ryze",Top Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Team Flash,Dante,6,2,4,33.3,3.5,4.83,5.5,1.86,160.67,5.92,10.0,367.0,65.9,25.6,20.7,5,"Wukong, Nidalee, Graves",Jungler,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Team Flash,Ikigai,6,1,5,16.7,1.83,4.17,5.5,1.76,158.33,5.68,9.0,322.0,61.1,15.3,18.7,5,"Graves, Karma, Galio",Jungler,20,468.0,9.9,7.8,76.5
-2022,Summer_Promotion,Team Flash,Zodiac,6,1,5,16.7,1.33,7.17,4.17,0.77,34.5,1.24,6.4,229.0,45.8,11.1,13.3,5,"Nautilus, Rakan, Leona",,20,468.0,9.9,7.8,76.5
+2022,Summer_Promotion,Team Flash,Zodiac,6,1,5,16.7,1.33,7.17,4.17,0.77,34.5,1.24,6.4,229.0,45.8,11.1,13.3,5,"Nautilus, Rakan, Leona",Support,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Team Flash,Eirlys,4,1,3,25.0,1.75,4.25,5.25,1.65,247.0,7.89,11.1,354.0,48.3,12.1,19.7,2,"Syndra, Ahri",Mid Laner,20,468.0,9.9,7.8,76.5
 2022,Summer_Promotion,Team Flash,Arte,2,1,1,50.0,1.5,5.0,11.5,2.6,31.0,1.03,7.6,250.0,76.5,8.8,13.4,2,"Nautilus, Alistar",Support,20,468.0,9.9,7.8,76.5
 2022,Summer_Season,AS Esports,Zin,30,6,24,20.0,0.83,3.0,7.1,2.64,37.2,1.3,6.8,238.0,63.6,6.7,13.4,14,"Renata Glasc, Braum, Rakan",Support,139,480.0,10.42,6.0,79.1
@@ -1143,20 +1143,20 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2023,Summer_Playoffs,Team Secret,Taki,18,10,8,55.6,0.67,2.28,7.44,3.56,30.78,0.98,7.4,237.0,72.6,6.0,12.7,6,"Alistar, Rell, Rakan",Support,43,499.0,11.1,6.86,77.6
 2023,Summer_Playoffs,Team Whales,Artemis,20,10,10,50.0,4.9,2.05,4.65,4.66,316.0,10.64,14.2,479.0,74.6,38.3,26.4,6,"Kai'Sa, Xayah, Aphelios",Bot Laner,43,499.0,11.1,6.86,77.6
 2023,Summer_Playoffs,Team Whales,BeanJ,20,10,10,50.0,1.65,2.3,7.9,4.15,131.75,4.43,9.2,309.0,74.6,12.9,17.1,7,"Vi, Sejuani, Rell",Jungler,43,499.0,11.1,6.86,77.6
-2023,Summer_Playoffs,Team Whales,Gloryy,20,10,10,50.0,3.15,2.05,5.4,4.17,268.55,9.04,12.3,415.0,66.8,24.6,22.9,9,"Ahri, LeBlanc, Jayce",,43,499.0,11.1,6.86,77.6
+2023,Summer_Playoffs,Team Whales,Gloryy,20,10,10,50.0,3.15,2.05,5.4,4.17,268.55,9.04,12.3,415.0,66.8,24.6,22.9,9,"Ahri, LeBlanc, Jayce",Mid Laner,43,499.0,11.1,6.86,77.6
 2023,Summer_Playoffs,Team Whales,Sparda,20,10,10,50.0,2.45,2.85,5.0,2.61,229.85,7.74,11.0,372.0,58.2,19.1,20.5,6,"K'Sante, Renekton, Aatrox",Top Laner,43,499.0,11.1,6.86,77.6
 2023,Summer_Playoffs,Team Whales,Bie,16,9,7,56.3,0.5,1.5,8.25,5.83,35.94,1.22,7.0,237.0,70.4,4.0,13.0,6,"Nautilus, Alistar, Rakan",Support,43,499.0,11.1,6.86,77.6
 2023,Summer_Playoffs,Team Whales,CBL,4,1,3,25.0,1.25,4.5,8.5,2.17,35.25,1.14,7.4,237.0,68.4,8.8,13.5,2,"Nautilus, Leona",Support,43,499.0,11.1,6.86,77.6
 2024,Spring_Promotion,APOLLO GAMING,Bun,25,12,13,48.0,0.52,3.2,9.92,3.26,33.48,1.08,7.5,241.0,70.2,3.5,12.8,9,"Nautilus, Rakan, Rell",Support,55,504.0,9.78,16.0,80.8
-2024,Spring_Promotion,APOLLO GAMING,TomRio,25,12,13,48.0,3.04,2.4,7.72,4.48,207.88,6.7,11.9,382.0,72.3,20.4,20.4,10,"Jarvan IV, Rell, Viego",,55,504.0,9.78,16.0,80.8
+2024,Spring_Promotion,APOLLO GAMING,TomRio,25,12,13,48.0,3.04,2.4,7.72,4.48,207.88,6.7,11.9,382.0,72.3,20.4,20.4,10,"Jarvan IV, Rell, Viego",Jungler,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,APOLLO GAMING,Vince,25,12,13,48.0,3.36,2.28,5.44,3.86,276.96,8.93,13.2,425.0,59.1,22.6,22.7,9,"Orianna, Lissandra, Galio",Mid Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,APOLLO GAMING,Yuki,25,12,13,48.0,3.12,3.28,5.04,2.49,240.68,7.76,12.1,390.0,54.8,21.0,20.8,8,"Rumble, Jax, Renekton",Top Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,APOLLO GAMING,Kwhite,20,8,12,40.0,5.05,2.3,4.4,4.11,274.35,8.91,13.9,450.0,67.5,36.1,24.3,8,"Aphelios, Xayah, Ezreal",Bot Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,APOLLO GAMING,K1thy1,5,4,1,80.0,4.0,1.6,10.2,8.88,195.8,6.14,12.5,392.0,77.2,21.7,19.9,3,"Jarvan IV, Sejuani, Viego",Jungler,55,504.0,9.78,16.0,80.8
-2024,Spring_Promotion,CYRUS,dttt,12,3,9,25.0,3.58,4.08,4.08,1.88,224.5,7.94,11.3,399.0,53.2,24.9,21.8,5,"Yone, Taliyah, Akali",,55,504.0,9.78,16.0,80.8
+2024,Spring_Promotion,CYRUS,dttt,12,3,9,25.0,3.58,4.08,4.08,1.88,224.5,7.94,11.3,399.0,53.2,24.9,21.8,5,"Yone, Taliyah, Akali",Mid Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,CYRUS,Nemo,12,3,9,25.0,3.75,5.0,4.83,1.72,244.92,8.66,12.2,431.0,59.5,26.0,23.6,5,"Xayah, Kai'Sa, Zeri",Bot Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,CYRUS,NoNoNo1,12,3,9,25.0,3.25,4.5,7.58,2.41,167.5,5.92,10.5,371.0,75.1,22.5,20.3,5,"Jarvan IV, Karthus, Lee Sin",Jungler,55,504.0,9.78,16.0,80.8
-2024,Spring_Promotion,CYRUS,uncle4,12,3,9,25.0,0.5,5.33,10.25,2.02,39.17,1.38,7.2,253.0,74.6,3.5,13.8,6,"Rakan, Rell, Nautilus",,55,504.0,9.78,16.0,80.8
+2024,Spring_Promotion,CYRUS,uncle4,12,3,9,25.0,0.5,5.33,10.25,2.02,39.17,1.38,7.2,253.0,74.6,3.5,13.8,6,"Rakan, Rell, Nautilus",Support,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,CYRUS,Be,11,3,8,27.3,3.64,3.36,4.09,2.3,203.91,7.16,10.7,376.0,52.8,24.8,20.5,4,"Aatrox, K'Sante, Renekton",Top Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,CYRUS,Mounnika,1,0,1,0.0,0.0,5.0,3.0,0.6,176.0,6.77,8.5,328.0,25.0,0.0,18.9,1,Gnar,Top Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,DG Esports,TQK,12,3,9,25.0,0.5,3.83,8.33,2.3,34.33,1.3,6.2,235.0,62.7,3.6,13.5,5,"Rell, Leona, Nautilus",Support,55,504.0,9.78,16.0,80.8
@@ -1168,7 +1168,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Spring_Promotion,DG Esports,Sweetboy,6,1,5,16.7,1.33,4.33,7.67,2.08,139.17,5.34,8.5,325.0,80.6,11.9,19.3,4,"Jarvan IV, Nocturne, Gragas",Jungler,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,MGN Box Esports,Ryuk,18,16,2,88.9,2.67,2.06,4.72,3.59,230.83,8.35,11.1,402.0,40.9,14.8,20.0,5,"Aatrox, K'Sante, Renekton",Top Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,MGN Box Esports,Sorn,18,16,2,88.9,3.28,2.06,10.83,6.86,157.83,5.71,10.9,396.0,78.2,18.2,19.7,7,"Vi, Jarvan IV, Rell",Jungler,55,504.0,9.78,16.0,80.8
-2024,Spring_Promotion,MGN Box Esports,Style,18,16,2,88.9,6.78,1.56,6.22,8.36,270.28,9.78,13.9,504.0,72.0,37.5,25.1,7,"Kai'Sa, Xayah, Kalista",,55,504.0,9.78,16.0,80.8
+2024,Spring_Promotion,MGN Box Esports,Style,18,16,2,88.9,6.78,1.56,6.22,8.36,270.28,9.78,13.9,504.0,72.0,37.5,25.1,7,"Kai'Sa, Xayah, Kalista",Bot Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,MGN Box Esports,Zodiac,18,16,2,88.9,1.06,3.0,12.61,4.56,31.56,1.14,7.6,275.0,75.7,5.8,13.7,7,"Alistar, Rell, Nautilus",Support,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,MGN Box Esports,Nugu,17,15,2,88.2,4.29,1.24,6.59,8.81,235.06,8.39,12.1,433.0,62.5,24.7,21.7,8,"Orianna, Syndra, Neeko",Mid Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,MGN Box Esports,Emo,1,1,0,100.0,4.0,0.0,12.0,16.0,173.0,8.1,9.4,441.0,55.2,13.8,19.4,1,Orianna,Mid Laner,55,504.0,9.78,16.0,80.8
@@ -1181,7 +1181,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Spring_Promotion,Original Gaming,Robin,7,1,6,14.3,1.57,2.86,2.71,1.5,208.0,7.67,9.7,357.0,48.4,17.7,21.5,4,"Aatrox, Renekton, Sion",Top Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,Original Gaming,Chopper,6,1,5,16.7,1.5,4.5,5.5,1.56,121.0,4.61,8.1,308.0,80.8,17.3,18.6,4,"Maokai, Jarvan IV, Rell",Jungler,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,Rainbow Warriors,2T,23,16,7,69.6,3.7,3.09,5.57,3.0,245.96,8.52,12.5,433.0,51.4,20.5,22.1,10,"Renekton, K'Sante, Irelia",Top Laner,55,504.0,9.78,16.0,80.8
-2024,Spring_Promotion,Rainbow Warriors,SPOT,20,14,6,70.0,3.05,2.6,8.2,4.33,184.2,6.41,11.1,387.0,65.6,17.8,19.9,6,"Jarvan IV, Viego, Lee Sin",,55,504.0,9.78,16.0,80.8
+2024,Spring_Promotion,Rainbow Warriors,SPOT,20,14,6,70.0,3.05,2.6,8.2,4.33,184.2,6.41,11.1,387.0,65.6,17.8,19.9,6,"Jarvan IV, Viego, Lee Sin",Jungler,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,Rainbow Warriors,Ezlove,18,12,6,66.7,4.28,3.44,7.22,3.34,169.72,6.1,10.7,385.0,60.9,22.6,19.5,10,"Kalista, Tristana, Lulu",Bot Laner,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,Rainbow Warriors,Killer,17,12,5,70.6,4.24,3.0,7.47,3.9,180.41,6.13,11.8,400.0,62.4,22.6,20.3,11,"Xayah, Ashe, Kalista",Support,55,504.0,9.78,16.0,80.8
 2024,Spring_Promotion,Rainbow Warriors,Artifact,16,10,6,62.5,4.31,1.56,5.88,6.52,267.88,8.86,13.0,430.0,65.2,27.6,22.6,7,"Azir, Syndra, LeBlanc",Mid Laner,55,504.0,9.78,16.0,80.8
@@ -1214,7 +1214,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Spring_Season,Rainbow Warriors,Hyo,4,0,4,0.0,2.5,5.75,6.5,1.57,161.25,5.37,9.7,323.0,63.2,17.5,18.1,3,"Jarvan IV, Nocturne, Jax",Jungler,106,543.0,10.4,8.5,78.5
 2024,Spring_Season,Rainbow Warriors,K1ller,4,0,4,0.0,3.5,4.25,5.25,2.06,268.25,8.93,12.5,415.0,61.4,24.6,23.2,2,"Varus, Lucian",Bot Laner,106,543.0,10.4,8.5,78.5
 2024,Spring_Season,Rainbow Warriors,Yuki,4,0,4,0.0,2.25,4.25,4.0,1.47,247.0,8.05,11.9,389.0,53.2,19.1,22.0,4,"Jax, Ryze, Jayce",Top Laner,106,543.0,10.4,8.5,78.5
-2024,Spring_Season,Rainbow Warriors,N0way,2,0,2,0.0,1.5,6.0,3.0,0.75,132.5,4.9,8.3,309.0,42.9,14.3,18.3,2,"Caitlyn, Senna",,106,543.0,10.4,8.5,78.5
+2024,Spring_Season,Rainbow Warriors,N0way,2,0,2,0.0,1.5,6.0,3.0,0.75,132.5,4.9,8.3,309.0,42.9,14.3,18.3,2,"Caitlyn, Senna",Bot Laner,106,543.0,10.4,8.5,78.5
 2024,Spring_Season,Team Flash,Draktharr,29,12,17,41.4,2.83,3.17,8.0,3.41,196.9,6.01,11.4,348.0,69.8,18.2,18.7,10,"Vi, Lee Sin, Maokai",Jungler,106,543.0,10.4,8.5,78.5
 2024,Spring_Season,Team Flash,Jane,29,12,17,41.4,3.97,2.66,6.9,4.09,278.69,8.51,13.6,416.0,70.0,25.6,22.3,11,"Orianna, Karma, Tristana",Mid Laner,106,543.0,10.4,8.5,78.5
 2024,Spring_Season,Team Flash,Puddin,29,12,17,41.4,4.83,2.24,5.45,4.58,311.31,9.51,15.0,457.0,66.2,31.1,24.6,11,"Xayah, Varus, Smolder",Bot Laner,106,543.0,10.4,8.5,78.5
@@ -1247,7 +1247,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Spring_Playoffs,Team Secret,Hasmed,9,3,6,33.3,2.89,4.11,4.67,1.84,281.44,8.51,13.2,397.0,60.2,23.0,22.0,8,"Jayce, Aatrox, Gwen",Top Laner,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Team Secret,Taki,9,3,6,33.3,3.0,3.22,4.22,2.24,229.89,6.95,12.6,382.0,57.5,23.9,21.1,5,"Senna, Varus, Xayah",Bot Laner,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Team Secret,Hiro02,7,3,4,42.9,1.43,3.86,7.29,2.26,212.43,6.11,11.6,333.0,61.0,10.0,18.1,3,"Vi, Maokai, Wukong",Jungler,19,459.0,9.82,5.77,74.6
-2024,Spring_Playoffs,Team Secret,Xuhao,6,3,3,50.0,0.5,3.83,6.67,1.87,80.83,2.57,8.2,259.0,53.8,3.8,14.0,5,"Rell, Tahm Kench, Rakan",,19,459.0,9.82,5.77,74.6
+2024,Spring_Playoffs,Team Secret,Xuhao,6,3,3,50.0,0.5,3.83,6.67,1.87,80.83,2.57,8.2,259.0,53.8,3.8,14.0,5,"Rell, Tahm Kench, Rakan",Support,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Team Secret,Palette,3,0,3,0.0,1.0,4.33,6.67,1.77,96.33,2.65,9.1,252.0,69.7,9.1,14.6,2,"Rakan, Tahm Kench",Support,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Team Secret,Yusah,2,0,2,0.0,0.0,3.0,3.5,1.17,137.5,5.06,7.4,272.0,53.8,0.0,16.5,2,"Sejuani, Maokai",Jungler,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Team Whales,Artemis,6,1,5,16.7,4.33,3.0,3.0,2.44,311.17,9.6,14.2,439.0,65.7,38.8,25.3,6,"Kai'Sa, Kalista, Caitlyn",Bot Laner,19,459.0,9.82,5.77,74.6
@@ -1259,7 +1259,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Spring_Playoffs,Vikings Esports,Kati,10,6,4,60.0,5.2,2.3,6.2,4.96,333.3,9.75,15.7,459.0,63.7,29.1,23.9,4,"Taliyah, Orianna, Tristana",Mid Laner,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Vikings Esports,Shogun,10,6,4,60.0,5.4,4.0,5.5,2.73,321.8,9.41,15.5,454.0,60.9,30.2,23.6,7,"Ashe, Zeri, Kalista",Bot Laner,19,459.0,9.82,5.77,74.6
 2024,Spring_Playoffs,Vikings Esports,SofM,10,6,4,60.0,1.6,2.2,11.1,5.77,54.1,1.58,9.5,278.0,70.9,8.9,14.5,5,"Hwei, Rakan, Karma",Support,19,459.0,9.82,5.77,74.6
-2024,Spring_Playoffs,Vikings Esports,TomRio,10,6,4,60.0,3.1,2.3,9.3,5.39,204.5,5.98,12.4,362.0,69.3,17.3,18.8,5,"Xin Zhao, Lee Sin, Maokai",,19,459.0,9.82,5.77,74.6
+2024,Spring_Playoffs,Vikings Esports,TomRio,10,6,4,60.0,3.1,2.3,9.3,5.39,204.5,5.98,12.4,362.0,69.3,17.3,18.8,5,"Xin Zhao, Lee Sin, Maokai",Jungler,19,459.0,9.82,5.77,74.6
 2024,Summer_Season,CERBERUS Esports,Meliodas,29,8,21,27.6,2.48,2.76,6.59,3.29,197.34,6.44,10.9,355.0,74.3,20.3,19.8,12,"Nidalee, Sejuani, Zyra",Jungler,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,CERBERUS Esports,Pun,29,8,21,27.6,2.48,3.76,5.07,2.01,228.0,7.44,11.3,369.0,61.9,20.3,20.6,14,"Renekton, Ornn, Jax",Top Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,CERBERUS Esports,Slowz,29,8,21,27.6,3.48,3.55,3.66,2.01,283.55,9.25,12.7,415.0,58.5,28.5,23.2,11,"Ezreal, Kai'Sa, Zeri",Bot Laner,98,534.0,10.21,32.0,74.5
@@ -1272,7 +1272,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Summer_Season,GAM Esports,Kiaya,28,20,8,71.4,3.79,2.43,6.61,4.28,274.57,8.57,13.4,420.0,58.2,21.2,21.3,12,"Renekton, Gnar, Skarner",Top Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,GAM Esports,Levi,28,20,8,71.4,3.93,3.64,9.21,3.61,224.39,7.0,12.7,396.0,73.6,22.0,20.1,12,"Shyvana, Lillia, Brand",Jungler,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,GAM Esports,Neo,20,14,6,70.0,3.4,1.55,7.5,7.03,279.1,9.04,13.4,434.0,68.1,21.3,22.2,8,"Ezreal, Ashe, Kalista",Bot Laner,98,534.0,10.21,32.0,74.5
-2024,Summer_Season,GAM Esports,Easylove,8,6,2,75.0,5.38,5.0,10.0,3.08,289.38,8.27,15.5,444.0,68.3,23.9,22.2,5,"Draven, Ziggs, Kai'Sa",,98,534.0,10.21,32.0,74.5
+2024,Summer_Season,GAM Esports,Easylove,8,6,2,75.0,5.38,5.0,10.0,3.08,289.38,8.27,15.5,444.0,68.3,23.9,22.2,5,"Draven, Ziggs, Kai'Sa",Bot Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,MGN Blue Esports,Phuc1,29,11,18,37.9,3.45,3.41,7.66,3.25,182.03,6.26,10.7,368.0,74.5,23.1,19.6,11,"Sejuani, Zyra, Nidalee",Jungler,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,MGN Blue Esports,Sty1e,29,11,18,37.9,3.79,3.41,5.41,2.7,269.76,9.27,12.5,430.0,61.8,25.5,22.9,12,"Kai'Sa, Zeri, Miss Fortune",Bot Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,MGN Blue Esports,TQ,29,11,18,37.9,0.72,4.79,9.79,2.19,29.03,1.0,7.4,254.0,70.6,4.9,13.5,7,"Rell, Leona, Rakan",Support,98,534.0,10.21,32.0,74.5
@@ -1281,7 +1281,7 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Summer_Season,MGN Blue Esports,VIN,12,6,6,50.0,3.92,2.75,3.92,2.85,262.67,9.54,12.3,446.0,58.8,29.4,23.4,6,"Zeri, Lucian, Kai'Sa",Mid Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,MGN Blue Esports,Rigel,3,1,2,33.3,1.0,3.33,5.67,2.0,231.67,7.81,10.5,354.0,48.8,7.3,19.1,3,"K'Sante, Gnar, Camille",Top Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Team Flash,Draktharr,29,10,19,34.5,2.72,4.0,6.69,2.35,205.21,6.44,11.2,353.0,71.8,20.8,19.5,11,"Maokai, Kindred, Viego",Jungler,98,534.0,10.21,32.0,74.5
-2024,Summer_Season,Team Flash,playcool,29,10,19,34.5,4.14,2.1,4.59,4.15,306.1,9.61,14.1,444.0,66.6,31.6,24.6,11,"Lucian, Tristana, Jayce",,98,534.0,10.21,32.0,74.5
+2024,Summer_Season,Team Flash,playcool,29,10,19,34.5,4.14,2.1,4.59,4.15,306.1,9.61,14.1,444.0,66.6,31.6,24.6,11,"Lucian, Tristana, Jayce",Mid Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Team Flash,Soraaa,29,10,19,34.5,0.69,4.03,8.76,2.34,32.59,1.02,7.7,241.0,72.1,5.3,13.4,10,"Leona, Milio, Alistar",Support,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Team Flash,Yoshino,29,10,19,34.5,2.21,3.31,4.72,2.09,232.38,7.3,11.4,359.0,52.9,16.8,19.9,14,"K'Sante, Renekton, Rumble",Top Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Team Flash,Balder,16,6,10,37.5,3.06,2.56,4.94,3.12,268.19,8.56,12.5,400.0,64.0,24.5,22.4,6,"Ezreal, Kai'Sa, Varus",Bot Laner,98,534.0,10.21,32.0,74.5
@@ -1308,14 +1308,14 @@ Year,Tournamment,Team,Player,G,W,L,WR,K,D,A,KDA,CS,CS/M,G.1,G/M,KPAR,KS,GS,CP,Ch
 2024,Summer_Season,Vikings Esports,Kati,28,23,5,82.1,5.79,2.64,7.21,4.92,313.57,10.07,15.6,501.0,66.8,29.7,24.5,10,"Corki, Hwei, Tristana",Mid Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Vikings Esports,Nanaue,28,23,5,82.1,4.07,3.25,5.75,3.02,244.75,7.86,12.7,409.0,50.5,20.9,20.0,9,"K'Sante, Jax, Gnar",Top Laner,98,534.0,10.21,32.0,74.5
 2024,Summer_Season,Vikings Esports,Shogun,28,23,5,82.1,4.68,2.18,8.5,6.05,291.93,9.37,14.4,463.0,67.7,24.0,22.6,12,"Ezreal, Nilah, Zeri",Bot Laner,98,534.0,10.21,32.0,74.5
-2024,Summer_Playoffs,GAM Esports,Easylove,11,9,2,81.8,4.45,1.45,9.0,9.25,341.55,9.5,16.2,450.0,66.4,22.0,22.6,6,"Ezreal, Jhin, Smolder",,25,491.0,10.89,9.25,78.8
+2024,Summer_Playoffs,GAM Esports,Easylove,11,9,2,81.8,4.45,1.45,9.0,9.25,341.55,9.5,16.2,450.0,66.4,22.0,22.6,6,"Ezreal, Jhin, Smolder",Bot Laner,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,GAM Esports,Elio,11,9,2,81.8,0.91,4.09,13.27,3.47,37.73,1.05,9.2,255.0,70.0,4.5,12.9,6,"Braum, Alistar, Rell",Support,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,GAM Esports,Emo,11,9,2,81.8,6.55,1.45,6.09,8.69,349.09,9.71,16.9,469.0,62.3,32.3,23.6,5,"Corki, Zeri, Ahri",Mid Laner,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,GAM Esports,Kiaya,11,9,2,81.8,4.55,2.45,8.36,5.26,287.18,7.99,14.9,414.0,63.7,22.4,20.9,8,"K'Sante, Aurora, Gnar",Top Laner,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,GAM Esports,Levi,11,9,2,81.8,3.82,2.73,10.82,5.37,248.27,6.91,14.3,398.0,72.2,18.8,20.0,6,"Lillia, Zyra, Vi",Jungler,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,Team Flash,Draktharr,3,0,3,0.0,2.33,3.0,3.67,2.0,283.67,6.8,14.2,340.0,58.1,22.6,20.4,2,"Lee Sin, Kindred",Jungler,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,Team Flash,Ouzi,3,0,3,0.0,2.0,1.67,3.67,3.4,396.33,9.5,17.1,409.0,54.8,19.4,24.5,2,"Ashe, Ezreal",Bot Laner,25,491.0,10.89,9.25,78.8
-2024,Summer_Playoffs,Team Flash,playcool,3,0,3,0.0,2.67,2.67,3.33,2.25,366.33,8.78,15.9,382.0,58.1,25.8,22.9,3,"Akali, Aurora, Syndra",,25,491.0,10.89,9.25,78.8
+2024,Summer_Playoffs,Team Flash,playcool,3,0,3,0.0,2.67,2.67,3.33,2.25,366.33,8.78,15.9,382.0,58.1,25.8,22.9,3,"Akali, Aurora, Syndra",Mid Laner,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,Team Flash,Soraaa,3,0,3,0.0,0.0,6.0,7.0,1.17,40.33,0.97,9.0,215.0,67.7,0.0,12.9,2,"Renata Glasc, Leona",Support,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,Team Flash,Yoshino,3,0,3,0.0,3.33,3.0,2.67,2.0,258.33,6.19,13.5,324.0,58.1,32.3,19.4,2,"K'Sante, Gragas",Top Laner,25,491.0,10.89,9.25,78.8
 2024,Summer_Playoffs,Team Secret,Aomine,8,2,6,25.0,3.25,1.88,5.0,4.4,324.75,9.73,14.0,419.0,66.7,26.3,23.5,4,"Ezreal, Varus, Ashe",Bot Laner,25,491.0,10.89,9.25,78.8
