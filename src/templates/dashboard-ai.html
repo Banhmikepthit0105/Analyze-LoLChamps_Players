@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <title>Plotly Visualization</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
     <style>
         body {
             margin: 0;
@@ -21,47 +24,26 @@
     </style>
 </head>
 <body>
-    <div class="input-group">
-        <input type="text" id="userInput" placeholder="Nhập yêu cầu trực quan hóa" style="width: 50%;">
-        <select id="provider">
-            <option value="gemini">Gemini</option>
-            <option value="deepseek">DeepSeek</option>
-        </select>
-        <select id="dataset">
-            <option value="champion">Champion Data</option>
-            <option value="player">Player Data</option>
-        </select>
-        <button onclick="generatePlot()">Tạo biểu đồ</button>
-    </div>
-    <div id="plot"></div>
-
-    <script>
-        async function generatePlot() {
-            const userInput = document.getElementById('userInput').value;
-            const provider = document.getElementById('provider').value;
-            const dataset = document.getElementById('dataset').value;
-
-            const response = await fetch('/api/plot', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    user_input: userInput,
-                    provider: provider,
-                    dataset: dataset
-                })
-            });
-
-            const data = await response.json();
-            if (data.error) {
-                alert('Lỗi: ' + data.error);
-                return;
-            }
-
-            const plotDiv = document.getElementById('plot');
-            Plotly.newPlot(plotDiv, data.plot.data, data.plot.layout);
-        }
-    </script>
+    <main>
+        <div class="input-group">
+            <div class="prompt-area">
+                <textarea style="width: 100%;" id="userInput" placeholder="Nhập yêu cầu trực quan hóa"></textarea>
+                <button onclick="generatePlot()"><img src = "../static/icons/send.svg" alt="send"/></button>
+            </div>
+            <div>
+                <select id="provider">
+                    <option value="gemini">Gemini</option>
+                    <option value="deepseek">DeepSeek</option>
+                </select>
+                <select id="dataset">
+                    <option value="champion">Champion Data</option>
+                    <option value="player">Player Data</option>
+                </select>
+            </div>
+            
+        </div>
+        <div id="plot"></div>
+    </main>
+    <script src="../static/plot.js"></script>
 </body>
 </html>

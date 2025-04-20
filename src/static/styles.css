@@ -1,0 +1,50 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    padding: 10px;
+    width: 50vw;
+    border: solid 1px gray;
+    border-radius: 15px;
+}
+
+.prompt-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+option, select, textarea, textarea::selection {
+    border: none;
+    font-family: "PT Sans", sans-serif;
+} 
+
+option, select {
+    border: solid 1px lightgray;
+    border-radius: 6px;
+}
+
+button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
