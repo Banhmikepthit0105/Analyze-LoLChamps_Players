@@ -44,7 +44,21 @@ button {
     border-radius: 100%;
 }
 
-button:hover {
+button:hover, #nav:hover {
     opacity: 70%;
     cursor: pointer;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#nav {
+    position: absolute;
+    right: 85vw;
+    top: 20px;
+    background-color: #3f5eb3;
+    padding: 10px;
+    border-radius: 15px;
 }

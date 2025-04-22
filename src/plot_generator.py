@@ -83,7 +83,6 @@ def create_plot(user_input, df, provider="gemini", deepseek_api_key=None):
         'KPAR': 'Tham gia hạ gục (FLOAT, tính theo (K + A) / tổng số hạ gục của đội dưới dạng phần trăm)',
         'KS': 'Tỉ lệ hạ gục trong đội (FLOAT, phần trăm)',
         'GS': 'Tỉ lệ vàng trong đội (FLOAT, phần trăm)',
-        'As': 'Vị trí của tướng (LIST[VARCHAR], chứa danh sách các vị trí, ví dụ: ["Mid Laner", "Top Laner", "Jungler", "Bot", "Support"])',
         'total_games': 'Tổng số trận trong mùa giải (INT)',
         '%B': 'Tỉ lệ bị cấm (FLOAT, phần trăm)',
         '%P': 'Tỉ lệ được chọn (FLOAT, phần trăm)'
