@@ -1,6 +1,4 @@
-body {
-    font-family: "PT Sans", sans-serif;
-}
+
 
 
 main {
@@ -12,7 +10,7 @@ main {
 .input-group {
     padding: 10px;
     width: 50vw;
-    border: solid 1px gray;
+    border: solid 1px #C89B3C;
     border-radius: 15px;
 }
 
@@ -26,10 +24,12 @@ main {
 option, select, textarea, textarea::selection {
     border: none;
     font-family: "PT Sans", sans-serif;
+    background-color: #010A13;
+    color: #F0E6D2;
 } 
 
 option, select {
-    border: solid 1px lightgray;
+    border: solid 1px #C89B3C;
     border-radius: 6px;
 }
 
@@ -50,7 +50,7 @@ button:hover, #nav:hover {
 }
 
 a, a:visited {
-    color: white;
+    color: #F0E6D2;
     text-decoration: none;
 }
 
@@ -58,7 +58,12 @@ a, a:visited {
     position: absolute;
     right: 85vw;
     top: 20px;
-    background-color: #3f5eb3;
+    background-color: #C89B3C;
     padding: 10px;
     border-radius: 15px;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #010A13;
 }

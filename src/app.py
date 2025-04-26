@@ -35,7 +35,7 @@ def powerbi():
 # Route để render trang Plotly
 @app.route('/plot')
 def plot():
-    return render_template('render-powerbi.html')
+    return render_template('render-tableau.html')
 
 # Route để tạo biểu đồ từ yêu cầu người dùng
 @app.route('/api/plot', methods=['POST'])
