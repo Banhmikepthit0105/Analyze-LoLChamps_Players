@@ -17,15 +17,23 @@ PLAYER_DATA_PATH = "../data/preprocessed_data/processed_player_stats.csv"
 # Đọc DataFrame
 try:
     champion_df = pd.read_csv(CHAMPION_DATA_PATH)
+    print(f"Loaded champion data with {len(champion_df)} rows and {len(champion_df.columns)} columns")
 except FileNotFoundError:
     champion_df = None
     print(f"Error: File {CHAMPION_DATA_PATH} not found.")
+except Exception as e:
+    champion_df = None
+    print(f"Error loading champion data: {str(e)}")
 
 try:
     player_df = pd.read_csv(PLAYER_DATA_PATH)
+    print(f"Loaded player data with {len(player_df)} rows and {len(player_df.columns)} columns")
 except FileNotFoundError:
     player_df = None
     print(f"Error: File {PLAYER_DATA_PATH} not found.")
+except Exception as e:
+    player_df = None
+    print(f"Error loading player data: {str(e)}")
 
 # Route để render trang Power BI
 @app.route('/')
@@ -47,7 +55,6 @@ def generate_plot():
     try:
         data = request.get_json()
         user_input = data.get('user_input')
-        provider = data.get('provider', 'gemini')  
         deepseek_api_key = data.get('DEEPSEEK_API_KEY', None)
         dataset = data.get('dataset', 'champion')  
 
@@ -66,15 +73,35 @@ def generate_plot():
         else:
             return jsonify({'error': 'Invalid dataset parameter. Use "champion" or "player".'}), 400
 
-        # Gọi hàm create_plot để tạo biểu đồ
-        fig = create_plot(user_input, df, provider, deepseek_api_key)
-
+        # Debug: Kiểm tra dataframe
+        print(f"Using {dataset} dataframe with shape: {df.shape}")
+        
+        # Gọi hàm create_plot để tạo biểu đồ, chuyển tham số dataset
+        fig = create_plot(user_input, df, dataset, deepseek_api_key)
+        
+        # Debug: Kiểm tra figure
+        print(f"Generated figure type: {type(fig)}")
+        
         # Chuyển đổi biểu đồ thành JSON để hiển thị trên frontend
-        fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-
-        return jsonify({'plot': fig_json})
+        try:
+            fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+            print(f"JSON conversion successful, length: {len(fig_json)}")
+            
+            # Kiểm tra định dạng JSON
+            parsed = json.loads(fig_json)
+            if 'data' not in parsed or 'layout' not in parsed:
+                print("WARNING: Missing 'data' or 'layout' in figure JSON")
+                
+            return jsonify({'plot': parsed})
+            
+        except Exception as json_error:
+            print(f"JSON conversion error: {str(json_error)}")
+            return jsonify({'error': f'Failed to convert plot to JSON: {str(json_error)}'}), 500
 
     except Exception as e:
+        import traceback
+        traceback_str = traceback.format_exc()
+        print(f"Error in generate_plot: {str(e)}\n{traceback_str}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
