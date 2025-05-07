@@ -22,6 +22,63 @@
         .input-group {
             margin-bottom: 20px;
         }
+        .dataset-selector {
+            margin-top: 10px;
+            padding: 8px 0;
+        }
+        .dataset-selector label {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #F0E6D2;
+        }
+        #dataset {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #C89B3C;
+            background-color: #010A13;
+            color: #F0E6D2;
+            font-size: 16px;
+        }
+        #datasetInfo {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #010A13;
+            color: #F0E6D2;
+            border: 1px solid #C89B3C;
+            border-radius: 8px;
+        }
+        #datasetInfo h3 {
+            color: #C89B3C;
+            margin-top: 0;
+        }
+        #datasetInfo ul {
+            padding-left: 20px;
+        }
+        #datasetInfo li {
+            margin-bottom: 5px;
+        }
+        #userInput {
+            width: 100%;
+            min-height: 80px;
+            max-height: 200px;
+            resize: none;
+            overflow-y: auto;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #C89B3C;
+            border-radius: 6px;
+            line-height: 1.4;
+        }
+        /* Tô màu xanh cho văn bản được chọn trong textarea */
+        #userInput::selection {
+            background-color: #005A82;
+            color: #F0E6D2;
+        }
+        /* Hỗ trợ Firefox */
+        #userInput::-moz-selection {
+            background-color: #005A82;
+            color: #F0E6D2;
+        }
     </style>
 </head>
 <body>
@@ -29,23 +86,28 @@
         <a id="nav" href="/plot">See Dashboard</a>
         <div class="input-group">
             <div class="prompt-area">
-                <textarea style="width: 100%;" id="userInput" placeholder="Nhập yêu cầu trực quan hóa"></textarea>
+                <textarea id="userInput" placeholder="Nhập yêu cầu trực quan hóa"></textarea>
                 <button onclick="generatePlot()"><img src = "../static/icons/send.svg" alt="send"/></button>
             </div>
-            <div>
-                <select id="provider">
-                    <option value="gemini">Gemini</option>
-                    <option value="deepseek">DeepSeek</option>
-                </select>
-                <select id="dataset">
+            <div class="dataset-selector">
+                <label for="dataset">Chọn bộ dữ liệu:</label>
+                <select id="dataset" onchange="updateDatasetInfo()">
                     <option value="champion">Champion Data</option>
                     <option value="player">Player Data</option>
                 </select>
             </div>
-            
+            <div id="datasetInfo"></div>
         </div>
         <div id="plot"></div>
     </main>
     <script src="../static/plot.js"></script>
+    <script>
+        // Auto-resize textarea based on content
+        const textarea = document.getElementById('userInput');
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
 </body>
 </html>
