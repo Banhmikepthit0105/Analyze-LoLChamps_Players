@@ -5,10 +5,10 @@
 pip install -r requirements.txt
 ```
 
-Run the streamlit app in your terminal 
+Run the Flask app in your terminal 
 
 ```python
-streamlit run app.py
+python app.py
 ```
 
 Dashboard UI demo (html): [LOL Dashboard](https://huggingface.co/spaces/thuyquynh/lol)
