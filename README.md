@@ -6,4 +6,4 @@ Run the Flask app in your terminal
 python app.py
 ```
 
-Dashboard UI demo (html): [LOL Dashboard](https://huggingface.co/spaces/thuyquynh/lol)
+Dashboard Demo: [VCSArenaAnalysis_Dashboard]([https://www.youtube.com/watch?v=-ROjfus5bTs])
